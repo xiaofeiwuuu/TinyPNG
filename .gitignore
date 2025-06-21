@@ -1,0 +1,19 @@
+# 忽略依赖目录
+node_modules/
+
+# 忽略日志文件
+*.log
+
+# 忽略本地环境变量文件（如有）
+.env
+.env.local
+
+# 忽略 macOS 系统文件
+.DS_Store
+
+# 忽略 VSCode 编辑器配置（如果使用）
+.vscode/
+
+# 忽略压缩结果和失败目录
+compressed_results/
+failed_images/
