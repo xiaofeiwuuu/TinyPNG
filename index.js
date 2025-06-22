@@ -52,7 +52,7 @@ const CONFIG = {
   SOURCE_ROOT: path.join(__dirname, 'static'), // 输入需要压缩的图片目录
   OUTPUT_ROOT: path.join(__dirname, 'compressed_results'), // 输出压缩后的图片目录
   SUPPORTED_FORMATS: ['.jpg', '.jpeg', '.png', '.webp'], // 支持的图片格式
-  MAX_CONCURRENT: Math.max(1, os.cpus().length - 1), // 最大并发处理数，基于 CPU 核心数
+  MAX_CONCURRENT: 3, // 最大并发处理数，基于 CPU 核心数
   TASK_DELAY: 300, // 任务间延迟时间（毫秒），避免频繁请求
   TIMEOUT: 30000, // 网络请求超时时间（毫秒）
   MAX_RETRIES: 2, // 失败重试最大次数
